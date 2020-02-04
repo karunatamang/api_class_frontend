@@ -17,7 +17,7 @@ class SignUpForm extends React.Component {
 
     registerData = () => {
         const data = {
-            fullName: this.state.fullname,
+            fullname: this.state.fullname,
             email: this.state.email,
             password: this.state.password,
             address: this.state.address,
@@ -60,7 +60,7 @@ class SignUpForm extends React.Component {
                             onChange={(event) => this.setState({ address: event.target.value })} required />
 
                         <label for="phonenumber">Phone Number:</label>
-                        <input type="text" value={this.state.phonenumber}
+                        <input type="number" value={this.state.phonenumber}
                             onChange={(event) => this.setState({ phonenumber: event.target.value })} required />
                         
 
